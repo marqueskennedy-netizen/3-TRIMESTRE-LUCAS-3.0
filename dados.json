@@ -1,0 +1,63 @@
+[
+{
+"id":1,
+"titulo":"A fantastica Fabrica de Chocolate",
+"categoria":"filme",
+"plataform":"Netflix",
+"nota":"9.30",
+"status":"assisti",
+"capa":"https://lens.usercontent.google.com/image?vsrid=COmetZWVy8-T0gEQAhgBIiQyM2MzMWFlOS1mZDI5LTQxZDctYTgzZC02ZTEzZTE1NWM3MjgygQEiAmNmKB9CcwoubGZlLWR1bW15OjM2ZWRmMmQ4LTc2MjgtNDNjMC1iOTMyLWNlOTFmZDBiNzZkYxJBCj8vYm5zL2NmL2JvcmcvY2YvYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvMTZaBAoCY2Y40rrtmu_1lgM&gsessionid=iEjJPeXNJA6fhSl3TYm6yCQO4LdVdwxZLWS6G9LArxigwZEqZQrdeQ"
+
+},
+
+{
+
+    "id":2,
+    "titulo":"A era do gelo 4",
+    "categoria":"Filme",
+    "plataform":"Netflix",
+    "nota":"9",
+    "status":"assisti",
+    "capa":"https://pt.wikipedia.org/wiki/Ice_Age:_Continental_Drift"
+},
+
+{
+    "id":3,
+    "titulo":"Teen wolf",
+    "categoria":"Serie",
+    "plataform":"Netflix",
+    "nota":"9.30",
+    "status":"assisti",
+    "capa":"https://woomagazine.com.br/curiosidades-do-universo-de-teen-wolf/"
+},
+{
+    "id":4,
+    "titulo":"Manifest",
+    "categoria":"Serie",
+    "plataform":"Netflix",
+    "nota":"8.30",
+    "status":"assisti",
+    "capa":"https://gshow.globo.com/cultura-pop/famosos/noticia/manifest-confira-curiosidades-do-elenco-da-serie-do-globoplay.ghtml"
+},
+
+{
+    "id":5,
+    "titulo":"pou",
+    "categoria":"jogo",
+    "plataform":"Play store",
+    "nota":"8",
+    "status":"joguei",
+    "capa":"https://www.coolmathgames.com/pt-br/0-pou"
+},
+
+{
+    "id":6,
+    "titulo":"minecraft",
+    "categoria":"jogo",
+    "plataform":"Play store",
+    "nota":"6.30",
+    "status":"joguei",
+    "capa":"https://www.microsoft.com/pt-br/store/top-paid/games/pc"
+}
+
+]
