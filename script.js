@@ -20,6 +20,20 @@ async function carregarCatalogo(){
         Erro ao carregar catálogo: ${erro.message}</p>`;
     }
 }
+
+//Método POST
+async function adicionarItem(){
+    event.preventDefault();
+
+    const novoItem = {
+        id: ,
+        titulo: ,
+        categoria:,
+        plataformanota: ,
+        status:,
+    }
+}
+
 function renderizarGrid(lista){
     const container = document.getElementById('catalogo-grid');
     container.innerHTML = '';
