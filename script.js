@@ -22,15 +22,28 @@ async function carregarCatalogo(){
 }
 
 //Método POST
-async function adicionarItem(){
+async function adicionarItem(event){
     event.preventDefault();
 
     const novoItem = {
-        id: ,
-        titulo: ,
-        categoria:,
-        plataformanota: ,
-        status:,
+        id: Date.now() ,
+        titulo: document.getElementById('titulo').value,
+        categoria: document.getElementById('categoria').value,
+        plataforma: document.getElementById('plataforma').value,
+        nota: parseFloat(document.getElementById('nota').value),
+        status: "Jogando"
+    };
+
+    try{
+        colecaoMidia.push(novoItem);
+        renderizarGrid(colecaoMidia);
+
+        document.getElementById('from-midia').requestFullscreen();
+        alert('Item adicionado á lista com sucesso!')
+    }catch(erro){
+        
+        alert("Erro ao enviar requisição")//POST
+
     }
 }
 
@@ -47,10 +60,10 @@ function renderizarGrid(lista){
         const card = document.createElement('div');
         card.className = 'card';
 
-        card.innerHTML=`
-        ${item.capa?`<img src="${item.capa}"alt="${item.titulo}" class="capa-midia"`:''}
+        card.innerHTML = `
+        ${item.capa ?` <img> src="${item.capa}" alt="${item.titulo}" class="capa-midia"`:''}
         <div>
-            <spam class="tag-categoria">${item.categoria}</span>
+            <span class="tag-categoria">${item.categoria}</span>
             <h3>${item.titulo}</h3>
             <p class="info">Plataforma: ${item.plataforma}</p>
             <p class="info">Nota: <span class="nota">${item.nota.toFixed(1)}</p>
@@ -65,3 +78,4 @@ function renderizarGrid(lista){
 
 //Executa a unção e carregarCatalogo quando inicia a página
 document.addEventListener('DOMContentLoaded',carregarCatalogo);
+

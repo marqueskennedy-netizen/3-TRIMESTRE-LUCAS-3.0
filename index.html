@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,25 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Hub de Mídidas</h1>
+        <h1>Hub de Mídias</h1>
         <p>Gerenciador de jogos, filmes e Séries</p>
     </header>
     <main class="painel-cadastro">
         <section class="painel-cadastro">
         <h2>Adicionar á Lista de Mídia</h2>
-        <for action="" id="from-midia">
+        <form action="" id="from-midia" onsubmit="adicionarItem(event)">
             <input type="text" id="titulo" placeholder="Ex: pou" required>
             <select id="categoria" required>
-                <option value="categoria">categoria</option>
+                <option value="">categoria</option>
                 <option value="Jogos">Jogos</option>
                 <option value="Filmes">Filmes</option>
                 <option value="Series">Series</option>
             </select>
-            <imput type="text" id="plataforma" placeholder="Ex:netflix, app store">
-            <imput type="text" id="nota" step="0.1" min="0"
+            <input type="text" id="plataforma" placeholder="Ex:netflix, app store">
+            <input type="text" id="nota" step="0.1" min="0"
             max="9.5" placeholder="Ex:0 a 9.5" required>
             <button class="btn-salvar">Adicionar</button>
-        </for> 
+        </form> 
 
         </section>
         <section class="painel-catalogo">
