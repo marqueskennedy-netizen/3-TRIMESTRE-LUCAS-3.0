@@ -2,7 +2,7 @@
 {
 "id":1,
 "titulo":"A fantastica Fabrica de Chocolate",
-"categoria":"filme",
+"categoria":"Filmes",
 "plataforma":"Netflix",
 "nota":9.30,
 "status":"assisti",
@@ -14,7 +14,7 @@
 
     "id":2,
     "titulo":"A era do gelo 4",
-    "categoria":"Filme",
+    "categoria":"Filmes",
     "plataforma":"Netflix",
     "nota":9,
     "status":"assisti",
@@ -24,8 +24,8 @@
 {
     "id":3,
     "titulo":"Teen wolf",
-    "categoria":"Serie",
-    "Plataforma":"Netflix",
+    "categoria":"Séries",
+    "plataforma":"Netflix",
     "nota":9.30,
     "status":"assisti",
     "capa":"https://woomagazine.com.br/curiosidades-do-universo-de-teen-wolf/"
@@ -33,8 +33,8 @@
 {
     "id":4,
     "titulo":"Manifest",
-    "categoria":"Serie",
-    "Plataforma":"Netflix",
+    "categoria":"Séries",
+    "plataforma":"Netflix",
     "nota":8.30,
     "status":"assisti",
     "capa":"https://gshow.globo.com/cultura-pop/famosos/noticia/manifest-confira-curiosidades-do-elenco-da-serie-do-globoplay.ghtml"
@@ -44,8 +44,8 @@
     "id":5,
     "titulo":"pou",
     "categoria":"jogo",
-    "Plataforma":"Play store",
-    "Nota":8,
+    "plataforma":"Play store",
+    "nota":8,
     "status":"joguei",
     "capa":"https://www.coolmathgames.com/pt-br/0-pou"
 },
@@ -54,7 +54,7 @@
     "id":6,
     "titulo":"minecraft",
     "categoria":"jogo",
-    "Plataforma":"Play store",
+    "plataforma":"Play store",
     "nota":6.30,
     "status":"joguei",
     "capa":"https://www.microsoft.com/pt-br/store/top-paid/games/pc"
