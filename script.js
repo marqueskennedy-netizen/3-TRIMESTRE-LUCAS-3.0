@@ -42,8 +42,7 @@ try{
         alert("Erro ao enviar requisição")//POST
 
     }
-    }
- 
+
 function renderizarGrid(lista){
     const container = document.getElementById('catalogo-grid');
     container.innerHTML = '';
@@ -76,6 +75,33 @@ lista.forEach(item => {
     
 });
 }
+
+async function deletarItem(){
+    try {
+        // Localiza o item pelo ID
+        const indice = colecaoMidia.findIndex(item => item.id === id);
+
+        // Verifica se o item existe
+        if (indice === -1) {
+            throw new Error("Item não encontrado!");
+        }
+
+        // Remove o item da coleção
+        colecaoMidia.splice(indice, 1);
+
+        // Atualiza a exibição dos cards
+        renderizarGrid(colecaoMidia);
+
+        alert("Item deletado com sucesso!");
+
+    } catch (erro) {
+        alert("Erro ao deletar item: " + erro.message);
+    }
+}
+//A partir de uma função assíncrona, crie uma 
+//função responsavel por deçetar um item 
+//ultilzando a estrutura try...catch
+
 //Excuta a função e carregarCatalogo quando inicia a página
 document.addEventListener('DOMContentLoaded',carregarCatalogo);
 
@@ -84,6 +110,7 @@ document.addEventListener('DOMContentLoaded',carregarCatalogo);
    async function alterarStatus(id){ 
     const item = colecaoMidia.find(m => m.id === id);
     if (!item) return;
+
 
     //Alterar o status sequencialmente
     const statuOpecoes = ["jogar","jogando","jogado","Assistir","assistindo"];
@@ -96,4 +123,5 @@ document.addEventListener('DOMContentLoaded',carregarCatalogo);
         alert("Erro ao atualizar o status");
     }
     }
-   //executa a função de carreg
+   //executa a função de carregarCatalogo quando inicia a página;
+   document.addEventListener('DOMContentLoaded',)
